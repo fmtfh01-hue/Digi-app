@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Khata",
+    "slug": "khata-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#171b22"
+    },
+    "android": {
+      "package": "com.workbench.khata",
+      "permissions": [
+        "READ_CONTACTS",
+        "SEND_SMS"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.workbench.khata",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSContactsUsageDescription": "Customer add karne ke liye contacts se naam/number lene ki ijazat chahiye."
+      }
+    },
+    "plugins": [
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Customer add karne ke liye contacts tak rasai chahiye."
+        }
+      ]
+    ]
+  }
+}
